@@ -1,0 +1,113 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+.wp-block-create-block-genre-bestseller {
+	.bestseller-block {
+		padding: 20px;
+		background-color: #E6E6E6;
+		text-align: center;
+
+		h2 {
+			margin-bottom: 30px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 700;
+			font-size: 26px;
+		}
+
+		.components-combobox-control {
+			text-align: left;
+
+			&__suggestions-container {
+				background-color: #fff;
+			}
+
+			.components-button {
+				&::before {
+					content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBjbGFzcz0iY29tYm9ib3gtaWNvbiIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0xNy41IDExLjZMMTIgMTZsLTUuNS00LjQuOS0xLjJMMTIgMTRsNC41LTMuNiAxIDEuMnoiPjwvcGF0aD48L3N2Zz4=");
+					width: 24px;
+					height: 24px;
+				}
+				svg {
+					display: none;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		h3 {
+			margin: 10px auto 0;
+			font-family: "Roboto", sans-serif;
+			font-weight: 600;
+			font-size: 24px;
+		}
+
+		label {
+			font-family: "Roboto", sans-serif;
+			font-weight: 700 !important;
+			font-size: 25px !important;
+			text-align: left;
+		}
+
+		select {
+			font-family: "Roboto", sans-serif;
+			font-weight: 500 !important;
+			font-size: 16px !important;
+			text-align: left;
+		}
+
+		.buy-button {
+			display: inline-block;
+			background-color: #ff6401;
+			padding: 8px 10px;
+			text-decoration: none;
+			margin-top: 10px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin-top: 10px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			color: #444;
+			white-space: pre;
+		}
+
+		.penguin-logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 40px;
+
+			&::before,
+			&::after {
+				content: '';
+				width: 120px;
+				height: 1px;
+				margin: 0 10px;
+				background-color: #000;
+			}
+		}
+	}
+}
+  
+@media (min-width: 768px) {
+	.wp-block-create-block-genre-bestseller {
+		.bestseller-block {
+			max-width: 650px;
+			margin: 0 auto;
+		}
+	}
+}
